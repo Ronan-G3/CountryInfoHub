@@ -1,4 +1,5 @@
-const BASE_URL = '/api'; // This should be the base URL of your Express server
+const BASE_URL = 'http://localhost:3001/api'; // Adjust if your backend is on a different port
+
 
 // Function to fetch country data from the backend
 const fetchCountryData = async (countryName) => {

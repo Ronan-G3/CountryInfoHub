@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Layout from './Components/Layout/Layout';
-import SearchInput from './Components/SearchInput/SearchInput'; 
-import CountryInfoDisplay from './Components/CountryInfoDisplay/CountryInfoDisplay'; 
-import './App.css';
-import { fetchCountryData } from './Context/CountryService'; 
+import SearchInput from './Components/SearchInput/SearchInput';
+import CountryInfoDisplay from './Components/CountryInfoDisplay/CountryInfoDisplay';
+import { fetchCountryData } from './Context/CountryService';  
 
 function App() {
   const [countryData, setCountryData] = useState(null);
@@ -23,6 +22,7 @@ function App() {
       setLoading(false);
     }
   };
+  
 
   return (
     <Layout>
@@ -30,7 +30,7 @@ function App() {
       {loading ? <p>Loading...</p> : <CountryInfoDisplay countryData={countryData} />}
       {error && <p>{error}</p>}
     </Layout>
-  );  
+  );
 }
 
 export default App;
