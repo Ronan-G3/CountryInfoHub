@@ -8,15 +8,22 @@ const SearchInput = ({ onSearch }) => {
     onSearch(inputValue);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSearch(inputValue);
+    }
+  };
+
   return (
     <div className={styles.searchContainer}>
       <input
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
+        onKeyDown={handleKeyDown}
         placeholder="Enter country name"
         className={styles.searchInput}
-        name="countryName"  // Added name attribute
+        name="countryName" // Added name attribute
       />
       <button onClick={handleSearchClick} className={styles.searchButton}>
         Search
