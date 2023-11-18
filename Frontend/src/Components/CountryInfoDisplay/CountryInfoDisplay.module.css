@@ -1,0 +1,31 @@
+.countryDisplayContainer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* You can add more specific styles for different parts of the country display */
+  .countryName {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .countryDetail {
+    margin: 5px 0;
+  }
+  
+  /* Style for list of details if you have one */
+  .detailList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detailItem {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
