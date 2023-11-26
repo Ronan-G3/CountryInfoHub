@@ -3,6 +3,7 @@ import Layout from './Components/Layout/Layout';
 import SearchInput from './Components/SearchInput/SearchInput';
 import CountryInfoDisplay from './Components/CountryInfoDisplay/CountryInfoDisplay';
 import { fetchCountryData } from './Context/CountryService';  
+import Spinner from './Components/Spinner/Spinner.js';
 
 function App() {
   const [countryData, setCountryData] = useState(null);
@@ -27,7 +28,7 @@ function App() {
   return (
     <Layout>
       <SearchInput onSearch={handleSearch} />
-      {loading ? <p>Loading...</p> : <CountryInfoDisplay countryData={countryData} />}
+      {loading ? <Spinner /> : <CountryInfoDisplay countryData={countryData} />}
       {error && <p>{error}</p>}
     </Layout>
   );

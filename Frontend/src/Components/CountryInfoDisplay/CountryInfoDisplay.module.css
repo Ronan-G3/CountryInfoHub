@@ -9,33 +9,54 @@
 }
 
 .countryDisplayContainer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #dedede;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* You can add more specific styles for different parts of the country display */
-  .countryName {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+}
+
+.countryName {
+  font-size: 2em;
+  font-weight: bold;
+  color: #336B87; /* Using one of the color tones from your logo */
+  margin-bottom: 0.5em;
+}
+
+.countryDetail {
+  font-size: 1em;
+  color: #666;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.countryDetailIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.countryFlag {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+.countryDisplayContainer {
+    padding: 10px;
+}
+
+.countryName {
     font-size: 1.5em;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .countryDetail {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.4;
-  }
-  
-  /* Style for list of details if you have one */
-  .detailList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .detailItem {
-    padding-bottom: 10px;
-  }
-  
+}
+
+.countryDetail {
+    font-size: 0.9em;
+}
+}
