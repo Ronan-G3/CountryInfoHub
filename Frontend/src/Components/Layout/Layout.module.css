@@ -1,25 +1,40 @@
 .layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  .header {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  .mainContent {
-    flex: 1;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.header {
+  background-color: #e9ecef;
+  color: #000000; 
+  padding: 20px 0;
+  font-size: 1.5em; 
+  font-weight: 600; 
+  text-align: center;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa; 
+}
+
+.footer {
+  background-color: #e9ecef; 
+  color: #333; 
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em; 
+}
+
+/* Responsive design breakpoints */
+@media (max-width: 768px) {
+  .header,
   .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
+      padding: 15px 0;
   }
-  
+  .mainContent {
+      padding: 15px;
+  }
+}
