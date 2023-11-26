@@ -6,13 +6,31 @@
 }
 
 .header {
+  display: flex;
+  justify-content: start; 
+  align-items: center;
   background-color: #e9ecef;
-  color: #000000; 
-  padding: 20px 0;
-  font-size: 1.5em; 
-  font-weight: 600; 
-  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
 }
+
+.banner {
+  height: 80px;
+  margin-right: 20px; 
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.logo {
+  max-width: 270px; 
+  height: auto;
+}
+
 
 .mainContent {
   flex: 1;

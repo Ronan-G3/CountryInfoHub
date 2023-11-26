@@ -15,10 +15,20 @@
   .searchButton {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #76CCCF; 
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
+  /* Responsive design breakpoints */
+@media (max-width: 768px) {
+  .header,
+  .footer {
+      padding: 15px 0;
+  }
+  .mainContent {
+      padding: 15px;
+  }
+}
