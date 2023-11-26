@@ -1,10 +1,22 @@
-.App {
-  text-align: center;
+/* Included a Google Font for modern appeal */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body, h2, p {
+  margin: 0;
+  padding: 0;
 }
 
+/* App container */
+.App {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Logo and Animation */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 80px; 
+  animation: none; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,7 +37,13 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.App-link:hover {
+  color: #0056b3;
 }
 
 @keyframes App-logo-spin {
