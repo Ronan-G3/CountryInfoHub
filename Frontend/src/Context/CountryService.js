@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3001/api'; 
+const BASE_URL = 'https://lobster-app-a8stm.ondigitalocean.app/api'; 
 
 
 // Function to fetch country data from the backend

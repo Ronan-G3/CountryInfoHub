@@ -22,7 +22,7 @@ const CountryInfoDisplay = ({ countryData }) => {
       <p>Languages: {languages}</p>
       <p>Currency: {currencies}</p>
       <img src={country.flags.png} alt={`Flag of ${country.name.common}`} style={{ maxWidth: '200px', marginTop: '10px' }} />
-      {/* Optionally, add a map link if available */}
+      {}
       {country.maps && (
         <p>
           <a href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer">
