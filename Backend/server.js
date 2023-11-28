@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
-const path = require('path');
 
 // Initialize the Express app
 const app = express();
@@ -18,15 +17,6 @@ app.get('/api/countries/:countryName', async (req, res) => {
     console.error("Error fetching country data: ", error);
     res.status(500).send(`Error fetching country data: ${error.message}`);
   }
-});
-
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../Frontend/build')));
-
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Frontend/build/index.html'));
 });
 
 // Start the server
