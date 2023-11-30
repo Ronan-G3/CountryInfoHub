@@ -1,9 +1,8 @@
 .spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; 
-    background: url('/spinner.gif') no-repeat center center;
-    background-size: contain; /* Ensures the GIF fits the div */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: no-repeat center center; 
+  background-size: contain;
+}
