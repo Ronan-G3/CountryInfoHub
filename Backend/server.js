@@ -8,10 +8,12 @@ const app = express();
 // Apply cors middleware
 app.use(cors());
 
+const API_BASE_URL = process.env.API_BASE_URL || 'https://restcountries.com/v3.1';
+
 // Define routes
 app.get('/api/countries/:countryName', async (req, res) => {
   try {
-    const response = await axios.get(`https://restcountries.com/v3.1/name/${req.params.countryName}`);
+    const response = await axios.get(`${API_BASE_URL}/name/${req.params.countryName}`);
     res.json(response.data);
   } catch (error) {
     console.error("Error fetching country data: ", error);
@@ -19,6 +21,14 @@ app.get('/api/countries/:countryName', async (req, res) => {
   }
 });
 
+const path = require('path');
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static('frontend/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+  });
+}
 
 
 // Start the server
