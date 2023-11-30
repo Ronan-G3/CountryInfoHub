@@ -1,12 +1,11 @@
 module.exports = {
-    apps : [{
+    apps: [{
       name: 'backend',
-      script: 'server.js',
-      watch: true,
+      script: './server.js',
       env: {
-        "NODE_ENV": "production",
-        "API_BASE_URL": "https://restcountries.com/v3.1", // Your REST Countries API base URL
-        "PORT": 3001 // Port the Node.js app will run on
+        NODE_ENV: 'production',
+        API_BASE_URL: 'https://restcountries.com/v3.1', 
+        PORT: 3001,
       }
     }]
   };
