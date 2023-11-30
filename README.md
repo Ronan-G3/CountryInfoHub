@@ -1,6 +1,6 @@
 # Country Info Hub
 
-![Country Info Hub Logo](/public/Country_Info.png)
+![Country Info Hub Logo](Frontend/public/Country_Info.png)
 
 Country Info Hub is a web application that allows users to search for information about any country. It's built with React for the frontend and Node.js with Express for the backend, interfacing with the REST Countries API.
 
@@ -13,37 +13,33 @@ Country Info Hub is a web application that allows users to search for informatio
 ## Quick Start
 
 1. **Clone the repository**
-   ```
-   git clone https://github.com/Ronan-G3/CountryInfoHub.git
-    ```
+```
+git clone https://github.com/Ronan-G3/CountryInfoHub.git
+```
 2. **Navigate to the frontend directory**:
   ```
 cd CountryInfoHub/Frontend
   ```
 3. **Install dependencies**:
 
-  ```
+```
 npm install
-  ```
+```
 4. **Build the frontend**:
-    ```
-    npm run build
-     ```
+```
+npm run build
+```
 5. **Start the backend server**:
-    ```
-    cd ../Backend
-    npm start
-    ```
+```
+cd ../Backend
+npm start
+```
 
 The frontend will be available on port 80, and the backend will be accessible through the `/api` endpoint.
 
-## Installation
-
-Please refer to [INSTALL.md](INSTALL.md) for detailed installation instructions.
-
 ## Usage
 
-After installation, open your web browser and go to `http://<your-server-ip>` to start using the Country Info Hub.
+After installation, open your web browser and go to `http://165.22.113.31/` to start using the Country Info Hub.
 
 ## Testing
 
@@ -68,6 +64,6 @@ This project is licensed under the Open Source Licencing.
 
 ---
 
-![Country Info Hub Banner](/assets/Country_Info_Banner.png)
+![Country Info Hub Banner](Frontend/public/Country_Info_Banner.png)
 
 
