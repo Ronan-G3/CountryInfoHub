@@ -63,7 +63,9 @@ This project is licensed under the Open Source Licencing.
 - REST Countries API for providing the data.
 
 ---
-Ronan Glennon 2023
+
+### Ronan Glennon 2023
+
 ![Country Info Hub Banner](Frontend/public/Country_Info_Banner.png)
 
 
