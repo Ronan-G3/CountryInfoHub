@@ -1,6 +1,6 @@
 # Country Info Hub
 
-![Country Info Hub Logo](/assets/Country_Info.png)
+![Country Info Hub Logo](/public/Country_Info.png)
 
 Country Info Hub is a web application that allows users to search for information about any country. It's built with React for the frontend and Node.js with Express for the backend, interfacing with the REST Countries API.
 
