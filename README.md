@@ -48,7 +48,7 @@ After installation, open your web browser and go to `http://165.22.113.31/` to s
 
 ## Deployment
 
-The app is deployed at `http://<your-deployment-url>`. Visit the live app [here](http://165.22.113.31/).
+The app is deployed via DigitalOcean droplet. Visit the live app [here](http://165.22.113.31/).
 
 ## Contributing
 
@@ -63,7 +63,7 @@ This project is licensed under the Open Source Licencing.
 - REST Countries API for providing the data.
 
 ---
-
+Ronan Glennon 2023
 ![Country Info Hub Banner](Frontend/public/Country_Info_Banner.png)
 
 
