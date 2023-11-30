@@ -10,6 +10,7 @@ app.use(cors());
 
 // Define the base URL for the REST Countries API
 const API_BASE_URL = process.env.API_BASE_URL || 'https://restcountries.com/v3.1';
+console.log('API_BASE_URL:', process.env.API_BASE_URL);
 
 // Define route for getting country information by name
 app.get('/api/countries/:countryName', async (req, res) => {
