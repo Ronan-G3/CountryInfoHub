@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors'); // Make sure cors is installed: npm install cors
+const cors = require('cors');
 const axios = require('axios');
 
 // Initialize the Express app
@@ -8,12 +8,15 @@ const app = express();
 // Apply cors middleware
 app.use(cors());
 
+// Define the base URL for the REST Countries API
 const API_BASE_URL = process.env.API_BASE_URL || 'https://restcountries.com/v3.1';
 
-// Define routes
+// Define route for getting country information by name
 app.get('/api/countries/:countryName', async (req, res) => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/name/${req.params.countryName}`);
+    // Construct the full API URL including the country name
+    const fullApiUrl = `${API_BASE_URL}/name/${req.params.countryName}`;
+    const response = await axios.get(fullApiUrl);
     res.json(response.data);
   } catch (error) {
     console.error("Error fetching country data: ", error);
@@ -21,15 +24,15 @@ app.get('/api/countries/:countryName', async (req, res) => {
   }
 });
 
+// Serve static files from the React app in production
 const path = require('path');
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static('frontend/build'));
+  app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
   });
 }
-
 
 // Start the server
 const port = process.env.PORT || 3001;
