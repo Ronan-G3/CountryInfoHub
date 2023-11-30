@@ -1,11 +1,13 @@
 import React from 'react';
-import spinnerGif from '../../assets/spinner.gif'; // Adjust the path according to where you place it
+import spinnerGif from '../../assets/spinner.gif'; 
 import styles from './Spinner.module.css';
 
+// The Spinner component displays a loading animation.
 const Spinner = () => {
+  // The spinner is styled with a background image from the assets
   return (
     <div className={styles.spinner} style={{ backgroundImage: `url(${spinnerGif})` }}>
-      {/* Spinner content */}
+      {/* The div will show a spinner GIF as a background while loading content */}
     </div>
   );
 };

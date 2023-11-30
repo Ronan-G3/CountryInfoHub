@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './CountryInfoDisplay.module.css'; 
 
+// CountryInfoDisplay component is responsible for rendering the information about a country.
+// It displays details like the capital, population, region, languages, and currency.
+
 const CountryInfoDisplay = ({ countryData }) => {
   if (!countryData || countryData.length === 0) return <div>...</div>;
 

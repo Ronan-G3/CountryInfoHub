@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Layout.module.css';
 
+// The Layout component wraps around the main content of the application.
+// It provides a consistent structure including the header, logo, and footer.
 const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
