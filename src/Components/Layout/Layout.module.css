@@ -1,0 +1,58 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    background-color: #e9ecef;
+    color: #ffffff;
+    padding: 10px 20px;
+  }
+  
+  .banner {
+    height: 80px;
+    margin-right: 20px; 
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+  
+  .logo {
+    max-width: 270px; 
+    height: auto;
+  }
+  
+  
+  .mainContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa; 
+  }
+  
+  .footer {
+    background-color: #e9ecef; 
+    color: #333; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em; 
+  }
+  
+  /* Responsive design breakpoints */
+  @media (max-width: 768px) {
+    .header,
+    .footer {
+        padding: 15px 0;
+    }
+    .mainContent {
+        padding: 15px;
+    }
+  }
